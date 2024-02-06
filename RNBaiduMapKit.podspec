@@ -58,42 +58,42 @@ Pod::Spec.new do |s|
 
   # base子库
   s.subspec 'Base' do |sp|
-  sp.ios.vendored_frameworks = 'BaiduMapKit/BaiduMapAPI_Base.framework'
-  sp.ios.vendored_libraries = 'BaiduMapKit/thirdlibs/*.{a}'
-  sp.ios.source_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/*.h'
-  sp.ios.public_header_files = 'BaiduMapKit/BaiduMapAPI_Base.framework/Headers/*.h'
+  sp.ios.vendored_frameworks = 'RNBaiduMapKit/BaiduMapAPI_Base.framework'
+  sp.ios.vendored_libraries = 'RNBaiduMapKit/thirdlibs/*.{a}'
+  sp.ios.source_files = 'RNBaiduMapKit/BaiduMapAPI_Base.framework/Headers/*.h'
+  sp.ios.public_header_files = 'RNBaiduMapKit/BaiduMapAPI_Base.framework/Headers/*.h'
   end
 
   # map子库
   s.subspec 'Map' do |sp|
-  sp.ios.dependency 'BaiduMapKit/Base'
-  sp.ios.resources = "BaiduMapKit/BaiduMapAPI_Map.framework/*.bundle"
-  sp.ios.vendored_frameworks = 'BaiduMapKit/BaiduMapAPI_Map.framework'
-  sp.ios.source_files = 'BaiduMapKit/BaiduMapAPI_Map.framework/Headers/*.h'
-  sp.ios.public_header_files = 'BaiduMapKit/BaiduMapAPI_Map.framework/Headers/*.h'
+  sp.ios.dependency 'RNBaiduMapKit/Base'
+  sp.ios.resources = "RNBaiduMapKit/BaiduMapAPI_Map.framework/*.bundle"
+  sp.ios.vendored_frameworks = 'RNBaiduMapKit/BaiduMapAPI_Map.framework'
+  sp.ios.source_files = 'RNBaiduMapKit/BaiduMapAPI_Map.framework/Headers/*.h'
+  sp.ios.public_header_files = 'RNBaiduMapKit/BaiduMapAPI_Map.framework/Headers/*.h'
   end
 
   # search子库
   s.subspec 'Search' do |sp|
-  sp.ios.dependency 'BaiduMapKit/Base'
-  sp.ios.vendored_frameworks = 'BaiduMapKit/BaiduMapAPI_Search.framework'
-  sp.ios.source_files = 'BaiduMapKit/BaiduMapAPI_Search.framework/Headers/*.h'
-  sp.ios.public_header_files = 'BaiduMapKit/BaiduMapAPI_Search.framework/Headers/*.h'
+  sp.ios.dependency 'RNBaiduMapKit/Base'
+  sp.ios.vendored_frameworks = 'RNBaiduMapKit/BaiduMapAPI_Search.framework'
+  sp.ios.source_files = 'RNBaiduMapKit/BaiduMapAPI_Search.framework/Headers/*.h'
+  sp.ios.public_header_files = 'RNBaiduMapKit/BaiduMapAPI_Search.framework/Headers/*.h'
   end
 
   # utils子库
   s.subspec 'Utils' do |sp|
-  sp.ios.dependency 'BaiduMapKit/Base'
-  sp.ios.vendored_frameworks = 'BaiduMapKit/BaiduMapAPI_Utils.framework'
-  sp.ios.source_files = 'BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/*.h'
-  sp.ios.public_header_files = 'BaiduMapKit/BaiduMapAPI_Utils.framework/Headers/*.h'
+  sp.ios.dependency 'RNBaiduMapKit/Base'
+  sp.ios.vendored_frameworks = 'RNBaiduMapKit/BaiduMapAPI_Utils.framework'
+  sp.ios.source_files = 'RNBaiduMapKit/BaiduMapAPI_Utils.framework/Headers/*.h'
+  sp.ios.public_header_files = 'RNBaiduMapKit/BaiduMapAPI_Utils.framework/Headers/*.h'
   end
   
   # # Bus子库
   # s.subspec 'Bus' do |sp|
-  # sp.ios.dependency 'BaiduMapKit/Base'
-  # sp.ios.vendored_frameworks = 'BaiduMapKit/BaiduMapAPI_Bus.framework'
-  # sp.ios.source_files = 'BaiduMapKit/BaiduMapAPI_Bus.framework/Headers/*.h'
-  # sp.ios.public_header_files = 'BaiduMapKit/BaiduMapAPI_Bus.framework/Headers/*.h'
+  # sp.ios.dependency 'RNBaiduMapKit/Base'
+  # sp.ios.vendored_frameworks = 'RNBaiduMapKit/BaiduMapAPI_Bus.framework'
+  # sp.ios.source_files = 'RNBaiduMapKit/BaiduMapAPI_Bus.framework/Headers/*.h'
+  # sp.ios.public_header_files = 'RNBaiduMapKit/BaiduMapAPI_Bus.framework/Headers/*.h'
   # end
 end
